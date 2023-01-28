@@ -1,0 +1,104 @@
+body {
+  width: 960px;
+  margin: 0px auto;
+}
+.container1 {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg");
+}
+.container1.hovered {
+  border: 10px solid black;
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 860px;
+  background: grey;
+  padding: 30px;
+}
+.container2.hovered {
+  border: 15px solid black;
+}
+.box {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 10px 5px;
+  height: 250px;
+  overflow: hidden;
+}
+.box .box-inner {
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+.box .box-inner:hover {
+  border: 5px solid black;
+}
+
+.box .box-inner .box-delete {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+.box .box-inner .box-delete:hover {
+  background-color: #ccc;
+}
+
+.box:nth-child(4n + 1) {
+  background: white;
+}
+.box:nth-child(4n + 2) {
+  background: red;
+}
+.box:nth-child(4n + 3) {
+  background: green;
+}
+.box:nth-child(4n + 4) {
+  background: blue;
+}
+
+.box:nth-child(6n + 1) {
+  width: 32%;
+}
+.box:nth-child(6n + 2) {
+  width: 32%;
+}
+.box:nth-child(6n + 3) {
+  width: 32%;
+}
+.box:nth-child(6n + 4) {
+  width: 48.5%;
+}
+.box:nth-child(6n + 5) {
+  width: 48.5%;
+}
+.box:nth-child(6n + 6) {
+  width: 98.5%;
+}
+
+.box .box-header {
+  display: flex;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+.box .box-content {
+  padding: 10px;
+}
+.box .box-title {
+  font-weight: bold;
+}
+.box .box-body {
+  word-break: break-word;
+}
